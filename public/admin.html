@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin · Ubuntu Code Locator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="mark">U</span>
+        <span>
+          <strong>Ubuntu Code</strong>
+          <small>Admin console</small>
+        </span>
+      </a>
+      <nav>
+        <a href="/">Public demo</a>
+      </nav>
+    </header>
+
+    <section class="panel admin-lock" id="lock">
+      <p class="kicker">Trusted update path</p>
+      <h1>Update a status from any phone</h1>
+      <p>Default PIN for this prototype is <code>2468</code>. Change <code>ADMIN_PIN</code> before any real ward test.</p>
+      <form id="pin-form" class="composer" style="max-width:360px;margin-top:16px">
+        <input id="pin" type="password" inputmode="numeric" placeholder="Admin PIN" />
+        <button class="btn" type="submit">Enter</button>
+      </form>
+      <p id="pin-error" style="color:#9a3412"></p>
+    </section>
+
+    <section class="admin-app hidden" id="app">
+      <div class="panel">
+        <p class="kicker">Bvumba 14 · Sherukuru 15</p>
+        <h2>Change what the community sees</h2>
+        <p>Same action as sending <code>UPDATE BOREHOLE2 WORKING</code> on WhatsApp. Use this in a meeting when you want people to watch Mukoyi or Sherukuru Clinic change live.</p>
+        <div id="admin-table" class="table-wrap"></div>
+      </div>
+      <div class="panel" style="margin-top:18px">
+        <h3 class="serif">Recent queries</h3>
+        <div id="recent"></div>
+      </div>
+    </section>
+  </div>
+  <script src="/admin.js"></script>
+</body>
+</html>

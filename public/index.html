@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubuntu Code — Community Service Locator</title>
+  <meta name="description" content="A WhatsApp-first locator for clinics, boreholes, schools and community places in Bvumba Ward 14 and Sherukuru Ward 15, Mutasa Central. Built by Ubuntu Code." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="mark">U</span>
+        <span>
+          <strong>Ubuntu Code</strong>
+          <small>Community Service Locator</small>
+        </span>
+      </a>
+      <nav>
+        <a class="hide-sm" href="#problem">The gap</a>
+        <a class="hide-sm" href="#how">How it works</a>
+        <a class="hide-sm" href="#directory">Directory</a>
+        <a href="/admin">Admin</a>
+        <a class="btn small" href="#demo">Try the demo</a>
+      </nav>
+    </header>
+
+    <p class="notice">
+      Field test for Mutasa Central: Bvumba Ward 14 and Sherukuru Ward 15.
+      Place names are local. Statuses are starting demo values until a local admin confirms them.
+    </p>
+
+    <section class="hero">
+      <div>
+        <p class="kicker">Mutasa Central · WhatsApp-first · Two wards</p>
+        <h1>Know which clinic is open. Know which borehole works.</h1>
+        <p class="lede">
+          People in a ward already know this — but the knowledge lives in word of mouth.
+          Ubuntu Code puts it on the phone they already use, and lets a trusted neighbour
+          update it in under a minute.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#demo">Ask the locator</a>
+          <a class="btn secondary" href="#offer">What Ubuntu Code builds</a>
+        </div>
+        <ul class="stats" id="stats">
+          <li><strong id="stat-entries">18</strong><span>local places listed</span></li>
+          <li><strong id="stat-attention">2</strong><span>need attention now</span></li>
+          <li><strong id="stat-queries">0</strong><span>demo queries logged</span></li>
+        </ul>
+      </div>
+
+      <aside class="phone" id="demo">
+        <div class="phone-head">
+          <div>
+            <div id="phone-ward" style="opacity:.7;font-size:11px;">WhatsApp · Bvumba Ward 14</div>
+            <b>Ubuntu Code Locator</b>
+          </div>
+          <span>Demo</span>
+        </div>
+        <div class="role-toggle">
+          <button type="button" id="ward-14" class="active">Bvumba 14</button>
+          <button type="button" id="ward-15">Sherukuru 15</button>
+        </div>
+        <div class="role-toggle">
+          <button type="button" id="role-community" class="active">Community member</button>
+          <button type="button" id="role-admin">Local admin</button>
+        </div>
+        <div class="thread" id="thread" aria-live="polite"></div>
+        <div class="chips">
+          <button class="chip" data-send="HELP">HELP</button>
+          <button class="chip" data-send="CLINIC">CLINIC</button>
+          <button class="chip" data-send="BOREHOLE">BOREHOLE</button>
+          <button class="chip" data-send="SCHOOL">SCHOOL</button>
+          <button class="chip" data-send="CHURCH">CHURCH</button>
+          <button class="chip" data-send="POLICE">POLICE</button>
+          <button class="chip" data-send="SHOP">SHOP</button>
+          <button class="chip" data-send="DAM">DAM</button>
+          <button class="chip" data-send="LIST">LIST</button>
+          <button class="chip" data-send="UPDATE BOREHOLE2 WORKING">Fix Mukoyi borehole</button>
+        </div>
+        <form class="composer" id="composer">
+          <input id="message" name="message" autocomplete="off" placeholder="Type 14, 15, CLINIC, SCHOOL…" />
+          <button class="btn gold" type="submit">Send</button>
+        </form>
+      </aside>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="split">
+        <div>
+          <p class="kicker">The problem</p>
+          <h2>The information exists. The channel does not.</h2>
+          <p>
+            Someone in Chikumbu should not walk to Sherukuru Clinic only to find the nurse
+            is at district training. The Mukoyi borehole can break on a Tuesday and Hakuziwi
+            still hears it is working on Thursday. A school at Zambe or Sherukuru can close
+            for a break and the rumour travels faster than the notice.
+          </p>
+          <p>
+            This is not a lack of knowledge. It is a lack of one trusted, current place to ask —
+            on a feature of life that already works in rural Zimbabwe: WhatsApp.
+          </p>
+        </div>
+        <div class="panel">
+          <h3 class="serif">What this prototype proves</h3>
+          <p>A community member can text one word and get a current answer in seconds.</p>
+          <p>A councillor, parish rep or teacher can change a status from their own phone, without a workshop.</p>
+          <p>Ubuntu Code can ship a tool that fits local budgets, connectivity, and trust — then grow it ward by ward.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <p class="kicker">How it works</p>
+      <h2>No app to install. No account to create.</h2>
+      <div class="steps" style="margin-top:20px">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>Ask</h3>
+            <p>Reply 14 for Bvumba or 15 for Sherukuru, then CLINIC, BOREHOLE, SCHOOL, CHURCH, POLICE or SHOP.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>Trust a neighbour</h3>
+            <p>One or two known numbers — a ward councillor, a parish representative, a teacher — are allowed to update status.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>Correct it in a minute</h3>
+            <p>They send <code>UPDATE BOREHOLE2 WORKING</code>. The next person who asks about Mukoyi sees the change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="directory">
+      <div class="panel">
+        <p class="kicker">Mutasa Central directory</p>
+        <h2>Places people already name in these wards.</h2>
+        <p>Statuses still need a local admin. Names are the ones we will walk and confirm.</p>
+        <div class="filters">
+          <button class="btn small" data-ward="all">Both wards</button>
+          <button class="btn small secondary" data-ward="mutasa-ward-14">Bvumba 14</button>
+          <button class="btn small secondary" data-ward="mutasa-ward-15">Sherukuru 15</button>
+        </div>
+        <div class="filters">
+          <button class="btn small" data-filter="all">All types</button>
+          <button class="btn small secondary" data-filter="school">Schools</button>
+          <button class="btn small secondary" data-filter="borehole">Boreholes</button>
+          <button class="btn small secondary" data-filter="clinic">Clinic</button>
+          <button class="btn small secondary" data-filter="church">Churches</button>
+          <button class="btn small secondary" data-filter="police">Police</button>
+          <button class="btn small secondary" data-filter="shop">Shops</button>
+          <button class="btn small secondary" data-filter="water">Dam</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Ward</th>
+                <th>Service</th>
+                <th>Status</th>
+                <th>Where</th>
+                <th>Updated</th>
+              </tr>
+            </thead>
+            <tbody id="directory-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="offer">
+      <p class="kicker">Ubuntu Code</p>
+      <h2>What we offer churches, councils, schools and small businesses</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Institutions</h3>
+          <p>Websites and information tools for churches, dioceses, schools, NGOs and civic offices — built for intermittent connectivity.</p>
+        </article>
+        <article class="card">
+          <h3>Small businesses</h3>
+          <p>Simple websites, WhatsApp storefronts, booking, shop records, and tools for farms, savings groups and cooperatives.</p>
+        </article>
+        <article class="card">
+          <h3>How we start</h3>
+          <p>A free conversation. We listen to the real constraint — budget, phones, language, trust — then we build only what will be used.</p>
+        </article>
+      </div>
+      <p style="margin-top:22px">
+        Proof of work: we designed and launched
+        <a href="https://www.caritasmutare.org" target="_blank" rel="noreferrer">caritasmutare.org</a>
+        for the Diocese of Mutare’s social action arm.
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <strong>Ubuntu Code</strong><br />
+          Digital tools for the people of Manicaland<br />
+          George Kasiyandima · Founder
+        </div>
+        <div>
+          kasiyageorge86@duck.com<br />
+          +27 66 084 5934 (WhatsApp)<br />
+          <a href="/admin">Admin console</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

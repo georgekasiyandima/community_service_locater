@@ -1,0 +1,37 @@
+{
+  "name": "ubuntu-code-community-service-locator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WhatsApp-first community service locator for Bvumba Ward 14 and Sherukuru Ward 15, Mutasa Central. A live prototype by Ubuntu Code.",
+  "keywords": [
+    "zimbabwe",
+    "manicaland",
+    "whatsapp",
+    "civic-tech",
+    "community"
+  ],
+  "homepage": "https://github.com/georgekasiyandima/community_service_locater",
+  "bugs": {
+    "url": "https://github.com/georgekasiyandima/community_service_locater/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgekasiyandima/community_service_locater.git"
+  },
+  "license": "MIT",
+  "author": "Ubuntu Code <kasiyageorge86@duck.com>",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed.js --force"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}

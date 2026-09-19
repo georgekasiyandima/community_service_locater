@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ubuntu-code-locator
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DEFAULT_WARD_ID
+        value: mutasa-ward-14
+      - key: ADMIN_PIN
+        generateValue: true
+      - key: LOG_SALT
+        generateValue: true
