@@ -24,7 +24,7 @@ We build software that fits real conditions: uneven connectivity, tight budgets,
 
 We designed and launched the live website for **Caritas Mutare** ([www.caritasmutare.org](https://www.caritasmutare.org)) — the Diocese of Mutare’s social action arm — from the first conversation through to launch.
 
-A second, living proof is the **Community Service Locator**: a WhatsApp tool that tells a ward which clinic is open, which borehole is working, and what is happening at the school. Ask us to open the demo.
+A second, living proof is the **Community Service Locator** for Bvumba Ward 14 and Sherukuru Ward 15: [ubuntu-code-locator.onrender.com](https://ubuntu-code-locator.onrender.com). It tells a ward which clinic is open, which borehole is working, and what is happening at the school.
 
 ---
 
@@ -82,4 +82,4 @@ Tighten it like this:
 - Add a third proof line once the locator has a real ward week behind it.
 - Keep BloomTech on the founder line only.
 - Avoid “SaaS-style tools” on the public PDF. Say “a tool your shop can keep using.”
-- The QR to Caritas is good. Add a second QR to this live demo when it is deployed.
+- The QR to Caritas is good. Add a second QR to the live locator: https://ubuntu-code-locator.onrender.com

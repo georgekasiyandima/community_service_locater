@@ -3,7 +3,7 @@
 Carry three things, never twelve:
 
 1. The one-pager (printed or PDF)
-2. This locator, open on your phone or a borrowed projector
+2. This locator, open on your phone: [https://ubuntu-code-locator.onrender.com](https://ubuntu-code-locator.onrender.com)
 3. A time you can sit with them this week
 
 ---
@@ -19,9 +19,9 @@ Then open the demo. Do not explain architecture.
 ## Demo script (45–60 seconds)
 
 1. “A person in Bvumba texts one word.” Tap **CLINIC**. Point out that Sherukuru Clinic is offered as the nearest clinic.
-2. Point at the closed satellite clinic. “She does not walk there for nothing.”
-3. Switch to **Local admin**. “The councillor or parish rep sends this.” Tap **Fix borehole 3** or type `UPDATE BOREHOLE3 WORKING`.
-4. Switch back. Tap **BOREHOLE**. “The next person sees the change.”
+2. Point at Sherukuru Clinic. “She does not walk there for nothing if the nurse is away.”
+3. Switch to **Local admin**. “The councillor or parish rep sends this.” Tap **Fix Mukoyi borehole** or type `UPDATE BOREHOLE2 WORKING`.
+4. Switch back to Bvumba, tap **BOREHOLE**. “The next person sees the change.”
 5. Stop talking. Ask: “Where does this kind of confusion happen for you?”
 
 If they are a school or the Education Department, start with **SCHOOL**, not boreholes.
@@ -85,7 +85,7 @@ Same day, on WhatsApp:
 Attach:
 
 - PDF one-pager
-- Demo URL
+- Demo URL: https://ubuntu-code-locator.onrender.com
 - Optional: 60-second video once you have recorded it
 
 Do not attach this architecture folder.

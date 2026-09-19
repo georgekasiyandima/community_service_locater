@@ -4,10 +4,7 @@
 
 This repository is the working prototype behind [Ubuntu Code](docs/ONE_PAGER.md): a community-rooted software studio building practical digital tools for churches, schools, councils and small businesses in rural and small-town Zimbabwe.
 
-> GitHub About (paste this on the repo):  
-> WhatsApp-first locator for clinics, boreholes, schools and community places in Bvumba and Sherukuru, Mutasa Central. A live prototype by Ubuntu Code.
-
-**Topics to add on GitHub:** `zimbabwe` · `manicaland` · `whatsapp` · `civic-tech` · `community` · `nodejs`
+**Live demo:** [https://ubuntu-code-locator.onrender.com](https://ubuntu-code-locator.onrender.com)
 
 ---
 
@@ -18,7 +15,7 @@ Residents of a ward already know which clinic is open and which borehole works. 
 This prototype proves one thing a priest, head teacher, councillor or NGO coordinator can see with their own thumbs:
 
 1. A community member texts `CLINIC`, `BOREHOLE` or `SCHOOL` and gets a current answer.
-2. A trusted local admin texts `UPDATE BOREHOLE3 BROKEN` and the next person sees it.
+2. A trusted local admin texts `UPDATE BOREHOLE2 WORKING` and the next person sees it.
 
 It is deliberately two neighbouring wards, one channel, no payments, no accounts. That boundary is what makes it shippable — and what makes it honest in a first meeting.
 
@@ -26,7 +23,7 @@ It is deliberately two neighbouring wards, one channel, no payments, no accounts
 
 ## See it in 60 seconds
 
-1. Open the public page (locally: `http://localhost:3000`).
+1. Open the [live demo](https://ubuntu-code-locator.onrender.com).
 2. Stay on **Bvumba 14** and tap **CLINIC**. You should see Sherukuru Clinic offered as the nearest clinic.
 3. Switch to **Sherukuru 15** and tap **CLINIC** again.
 4. Switch the chat to **Local admin**.
@@ -47,7 +44,9 @@ npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) for the public demo and [http://localhost:3000/admin](http://localhost:3000/admin) for the admin console (PIN `2468` unless you change `ADMIN_PIN`).
+Live: [https://ubuntu-code-locator.onrender.com](https://ubuntu-code-locator.onrender.com) · admin: [https://ubuntu-code-locator.onrender.com/admin](https://ubuntu-code-locator.onrender.com/admin)
+
+Locally, open [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/admin](http://localhost:3000/admin) (PIN `2468` unless you change `ADMIN_PIN`).
 
 | Command        | What it does                                      |
 |----------------|---------------------------------------------------|
