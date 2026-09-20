@@ -17,7 +17,7 @@ This prototype proves one thing a priest, head teacher, councillor or NGO coordi
 1. A community member texts `CLINIC`, `BOREHOLE` or `SCHOOL` and gets a current answer.
 2. A trusted local admin texts `UPDATE BOREHOLE2 WORKING` and the next person sees it.
 
-It is deliberately two neighbouring wards, one channel, no payments, no accounts. That boundary is what makes it shippable — and what makes it honest in a first meeting.
+It is deliberately two neighbouring wards, one channel, no payments, no accounts.
 
 ---
 
@@ -29,10 +29,6 @@ It is deliberately two neighbouring wards, one channel, no payments, no accounts
 4. Switch the chat to **Local admin**.
 5. Tap **Fix Mukoyi borehole** or send `UPDATE BOREHOLE2 WORKING`.
 6. Switch back to **Community member**, choose **Bvumba 14**, tap **BOREHOLE**.
-
-That sequence is the outreach demo. Record it once; use it with the [one-pager](docs/ONE_PAGER.md).
-
----
 
 ## Quick start
 
@@ -46,7 +42,7 @@ npm start
 
 Live: [https://ubuntu-code-locator.onrender.com](https://ubuntu-code-locator.onrender.com) · admin: [https://ubuntu-code-locator.onrender.com/admin](https://ubuntu-code-locator.onrender.com/admin)
 
-Locally, open [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/admin](http://localhost:3000/admin) (PIN `2468` unless you change `ADMIN_PIN`).
+Locally, open [http://localhost:3000](http://localhost:3000) and [http://localhost:3000/admin](http://localhost:3000/admin) (PIN `2468`)
 
 | Command        | What it does                                      |
 |----------------|---------------------------------------------------|
@@ -89,21 +85,6 @@ The webhook stays dumb: parse, route, reply. Business rules live in services so 
 
 Read [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the scale-up path.
 
----
-
-## WhatsApp (optional)
-
-The web demo is the client-facing prototype. Twilio is an adapter, not a requirement for a first meeting.
-
-1. Create a Twilio account and open the WhatsApp Sandbox.
-2. Set `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, and `TWILIO_WHATSAPP_NUMBER` in `.env`.
-3. Point **When a message comes in** to `https://<your-host>/webhook/whatsapp`.
-4. Join the sandbox from a test phone, then send `CLINIC`.
-
-Sandbox contacts must opt in. That is why the web chat exists: a councillor should not have to join Twilio to understand the product.
-
----
-
 ## Environment
 
 See [.env.example](.env.example). The important ones:
@@ -135,8 +116,7 @@ Success for the first real week:
 Ubuntu Code is a software initiative founded by George Kasiyandima, a full-stack developer from Manicaland, with fellow developers. We build affordable tools for the institutions and businesses that serve rural and small-town Zimbabwe.
 
 - One-pager copy: [docs/ONE_PAGER.md](docs/ONE_PAGER.md)
-- Why this product first, and how to take it to people: [docs/STRATEGY.md](docs/STRATEGY.md)
-- Meeting scripts and follow-up: [docs/OUTREACH.md](docs/OUTREACH.md)
+  
 
 **Contact:** kasiyageorge86@duck.com · +27 66 084 5934 (WhatsApp)
 
